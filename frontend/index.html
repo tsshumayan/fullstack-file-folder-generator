@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Generator Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="bg-light">
+  <div class="container mt-5">
+    <div class="card p-4 shadow-lg">
+      <h3 class="mb-4 text-center">📁 Project Generator Dashboard</h3>
+
+      <div class="mb-3">
+        <label class="form-label">File Location (absolute path)</label>
+        <input type="text" class="form-control" id="filePathInput" placeholder="e.g. D:/Projects/MyApp" />
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Select Frontend Framework</label>
+        <select id="frontendSelect" class="form-select">
+          <option value="">Choose...</option>
+          <option value="bootstrap">Bootstrap</option>
+          <option value="tailwind">Tailwind CSS</option>
+          <option value="react">React JS</option>
+          <option value="next">Next JS</option>
+        </select>
+      </div>
+
+      <button class="btn btn-primary w-100" onclick="submitForm()">🚀 Generate Project</button>
+
+      <div id="responseMessage" class="mt-3"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
